@@ -1,0 +1,179 @@
+<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="header">
+  <span>Online Shopping<span>
+  <span class="fa fa-shopping-cart"> Cart</span>
+</div>
+
+<div class=content>
+
+  <div class="products-catalog col-8">
+
+    <div class="wrapper list">
+      
+      <!-- buttons to switch between views       -->
+      <div class="buttons">
+        <button class="list-view on"><i class="fa fa-bars"></i></button>
+        <button class="grid-view"><i class="fa fa-th"></i></button>
+      </div>
+      
+    <!-- Items divs start here       -->
+      
+      <!--   item 1     -->
+      <div class="item">
+        <a href="#"><img src="img/shoe.jpg" /></a>
+        <div class="details">
+          <h2>Shoes</h2>
+          <p>Men's shoes</p>
+          <span class="price">Rs. 2000.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(2000,'Nike Running Shoe')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+<!--       item 2 -->
+      <div class="item">
+        <a href="#"><img src="img/laptop.png" /></a>
+        <div class="details">
+          <h2>Laptop (Out of stock)</h2>
+          <p>Hp Laptop</p>
+          <span class="price">Rs. 20000.00/-</span>
+          <button id="oofs"class="add_to_cart" onclick="myFunction(20000,'Hp Laptop')" disabled>
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+<!--       item 3 -->
+        <div class="item">
+        <a href="#"><img src="img/meizu_m2.jpg" /></a>
+        <div class="details">
+          <h2>Meizu m2 Cell Phone</h2>
+          <p>Mobile Phone</p>
+          <span class="price">Rs. 7000.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(7000,'Meizu M2')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+<!--     item 4   -->
+        <div class="item">
+        <a href="#"><img src="img/fogg.jpg"  /></a>
+        <div class="details">
+          <h2>Deodrants</h2>
+          <p>Fogg Deodrants</p>
+          <span class="price">Rs. 500.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(500,'Fogg Deodrant')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+
+<!--     item 5   -->
+        <div class="item">
+        <a href="#"><img src="img/watch.jpg" /></a>
+        <div class="details">
+          <h2>Watch</h2>
+          <p>Chain Watch</p>
+          <span class="price">Rs. 500.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(500,'Metal Chain Watch')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+
+<!--     item 6   -->
+        <div class="item">
+        <a href="#"><img src="img/harddisk.jpg" /></a>
+        <div class="details">
+          <h2>HardDisk</h2>
+          <p>500 GB Seagate Hard-Disk</p>
+          <span class="price">Rs. 2000.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(2000,'Seagate 500 GB Hard-Disk')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+
+<!--     item 7   -->
+        <div class="item">
+        <a href="#"><img src="img/calculator.jpg" /></a>
+        <div class="details">
+          <h2>Calculator</h2>
+          <p>Hp Scientific Calculator</p>
+          <span class="price">Rs. 1000.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(1000,'Scientific Calculator')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+
+
+<!--     item 8   -->
+        <div class="item">
+        <a href="#"><img src="img/book.jpg" /></a>
+        <div class="details">
+          <h2>Networking Book</h2>
+          <p>Computer Network Book</p>
+          <span class="price">Rs. 800.00/-</span>
+          <button class="add_to_cart" onclick="myFunction(800,'Computer Networking Book')">
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+
+
+<!--     item 9   -->
+        <div class="item">
+        <a href="#"><img src="img/dslr.jpg" /></a>
+        <div class="details">
+          <h2>DSLR (out of stock)</h2>
+          <p>Canon DSLR</p>
+          <span class="price">Rs. 50000.00/-</span>
+          <button id="oos" class="add_to_cart" onclick="myFunction(50000,'Canon DSLR')" disabled>
+              ADD TO CART
+            </button>
+        </div>
+      </div>
+
+<!--   end of items     -->
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ################################ CART ######################################################## -->
+
+<div class="products-cart">
+  <span>Shopping Bill </span>
+  <div class="bill">
+    <ul>
+      <li><span><span class="item-desc">Item1</span> <span class="price">Rs. 0.00/-</span></span>
+      </li>
+      <li><span><span class="item-desc">Item2</span> <span class="price">Rs. 0.00/-</span></span>
+      </li>
+      <li><span><span class="item-desc">Item3</span> <span class="price">Rs. 0.00/-</span></span>
+      </li>
+      <li><span><span class="item-desc">Item4</span> <span class="price">Rs. 0.00/-</span></span>
+      </li>
+    </ul>
+    <span class="total-amount">
+      Rs. 0.00/-
+    </span>
+  </div>
+
+</div><!-- #################################### END ########################################### -->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
