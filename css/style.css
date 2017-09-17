@@ -18,13 +18,13 @@ body{
       padding-bottom: 10px;  }
    
     .col-8 {
-      width: 80%;
       float: left;
       margin-left: 0;
     }
 /*    #################################### CART #####################################*/
     .products-cart {
       margin-top: 50px;
+      margin-right: 50px;
     }
     .products-cart .bill ul {
       list-style: none;
@@ -32,7 +32,7 @@ body{
     .products-cart .bill li {
       display: block;
       border-bottom: solid grey 1px;
-      padding: 10px 0px 10px 0px;
+      padding: 10px 0px 50px 0px;
     }
     .products-cart .bill span.price {
       font-size: 14px;
@@ -45,7 +45,6 @@ body{
       display: inline;
     }
     .product p{
-    	font-size: ;
     	font-family: Arial, Helvetica, sans-serif;
     	color: #555;
 
@@ -103,7 +102,7 @@ body{
       background-color: darkorange;
     }
     .wrapper {
-      max-width: 92%;
+      max-width: 85%;
       width: 1000px;
       padding: 20px 20px 0;
       background-color: #F0F0E8;
@@ -192,8 +191,8 @@ body{
         }
     .grid .item {
     	height:auto;
-      width: 300px;
-      margin:20px 5px 10px 15px;
+      width: 270px;
+      margin:20px 5px 10px 10px;
       text-align: center;
       background-color: #fff;
       overflow: hidden;
