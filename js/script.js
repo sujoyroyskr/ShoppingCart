@@ -32,7 +32,7 @@ var total=0;
 	{
 
 
-	if(counter<5){
+	if(counter<10){
     	counter++;
 		total+=value;
 		console.log(total);
@@ -42,7 +42,7 @@ var total=0;
 		 $(".product").append("<p>"+value+"</p><hr>");
 		}
 	else{
-		alert("you can't add more then four")
+		alert("you can't add more than nine")
 		}
 	}
 //END
