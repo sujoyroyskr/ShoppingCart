@@ -181,6 +181,16 @@ body{
     .list button.add_to_cart:hover {
       background-color: darkorange;
     }
+[id^="cancel-btn"]:hover{
+  color: red;
+}
+
+#item-count{
+  border: solid red 1px;
+  padding: 1px;
+  border-radius:100px;
+  background-color: red;
+}
 
  /*    #################################### END #####################################*/   
 
